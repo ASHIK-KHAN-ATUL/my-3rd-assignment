@@ -35,6 +35,8 @@
             'b-yellow':'#EFDA6E',
             'b-green':'#A4DAC3',
             'b-blue':'#77AAEA',
+            'b-footer':'#1C1C1C',
+            'des':'#737373',
 
           }
         }
@@ -123,7 +125,7 @@
                 <div class="text-center space-y-6 mx-10">
                     <h1 class=" text-xl md:text-4xl lg:text-6xl font-extrabold">A barn house of this design has a <br> striking appearance</h1>
                 <p class="lg:font-medium text-[14px] ">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
-                <button class="btn w-full md:w-[210px] bg-btn-lite rounded-[32px]">View Details <i class="fa-solid fa-arrow-right bg-btn-primary -rotate-45 px-2 py-2 rounded-full "></i> </button>
+                <button class="btn w-full md:w-[210px] bg-btn-lite rounded-[32px] ">View Details <i class="fa-solid fa-arrow-right bg-btn-primary -rotate-45 px-2 py-2 rounded-full "></i> </button>
                 </div>
             </div>
          </section>
@@ -133,17 +135,21 @@
 
 
      <!-- Main section -->
-      <main class="w-full bg-stone-100  ">
+      <main class="w-full bg-stone-100 mt-10  lg:mt-28">
         <!-- main secion -->
         <section class=" md:container mx-auto">
+              <!-- vector image -->
+               <div class="hidden lg:inline-block relative left-[1pxz] top-[105px] boreder py-5 outline-dashed ">
+                <img src="assets/Vector.png" alt="">
+               </div>
                 <!-- We design  section   -->
              <section class=" ">
                     <!-- We design thoughtful, liveable spaces div -->
-                     <div class="md:container mx-auto flex flex-col lg:flex-row py-24 mt-28 gap-9  ">
+                     <div class="md:container mx-auto flex flex-col lg:flex-row py-24  gap-9  ">
                         <!-- div 1  for Text-->
-                         <div class=" lg:w-1/2 flex flex-col mx-8 ">
+                         <div class=" lg:w-1/2 flex flex-col mx-8  ">
                             <!--  btn and  h1 and p  -->
-                              <div class="mb-6 text-center ">
+                              <div class="mb-6 text-center lg:text-start ">
                                 <!-- button -->
                                 <div class="bg-white rounded-[24px] py-2 px-4  inline-block  ">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -275,7 +281,7 @@
 
  
         <!-- Let’s Discuss Next Project SECTION -->
-         <section class="mx-auto   bg-[url(assets/bg.jpg)] bg-no-repeat bg-cover mt-6  h-auto">
+         <section class="mx-auto   bg-[url(assets/bg.jpg)] bg-no-repeat bg-cover mt-6  h-auto mb-2">
             <div class="md:container mx-auto py-24">
               <!-- Normal Text Area  -->
                 <div class="pb-8 text-center ">
@@ -319,10 +325,42 @@
             </div>
          </section>
 
-
-
-
       <!-- Footer section  -->
-       <footer></footer>
+       <footer class="  bg-b-footer w-full h-full p-24">
+        <div class="md:container mx-auto">
+        <!-- footer div1 -->
+        <div class="text-center">
+            <!-- button -->
+            <div class="mb-4">
+              <a class=" font-bold text-xl text-white "> <i class="fa-solid fa-arrow-right bg-btn-primary -rotate-45 px-2 py-2 rounded-full text-black "></i> Rinterio</a>
+            </div>
+            <!-- Description -->
+            <div>
+              <p class="text-des ">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+            </div>
+          
+        </div>
+
+        <!--  footer div 2 -->
+        <div class=" text-gray-300 flex justify-center ">
+          <ul class="text-center  px-1 flex flex-col lg:flex-row  gap-8 lg:gap-28 mt-8">
+            <li class="font-extrabold"><a>Home</a></li>
+            <li class="font-normal"><a>Services</a></li>
+            <li class="font-normal"><a>Portfolio</a></li>
+            <li class="font-normal"><a>Blogs</a></li>
+            <li class="font-normal"><a>Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- footer div 3 -->
+        <div class="flex justify-center">
+          <div class="bg-btn-primary py-3 px-5 rounded-[32px] text-center mt-14  inline-block">
+            <a class=" font-bold text-sm lg:text-xl "> Book Consult </a> 
+            <i class="fa-solid fa-arrow-right bg-black text-white -rotate-45 px-2 py-2 rounded-full "></i>
+          </div>
+        </div>
+
+        </div>
+       </footer>
 </body>
 </html>
